@@ -105,8 +105,8 @@ body {
 }
 
 .card {
-
   width: 335px;
+  height: 400px;
   color: var(--transparent-white);
   padding: 50px;
 }
@@ -126,7 +126,6 @@ body {
   background-color: var(--very-dark-cyan);
 }
 
-
 .icon {
   margin-bottom: 25px;
 }
@@ -144,26 +143,53 @@ p {
   margin-bottom: 25px;
 }
 
+.button {
+  position: relative;
+}
+
 button {
-  border: 1px transparent;
+  position: absolute;
+  border: 3px transparent;
   border-radius: 25px;
   font-size: 1.5rem;
   width: 60%;
   padding: 10px 0;
-
+  background-color: var(--very-light-gray);
 }
 
 .sedans button {
   color: var(--bright-orange);
 }
 
+.sedans button:hover {
+  cursor: pointer;
+  color: var(--transparent-white);
+  background-color: var(--bright-orange);
+  border: 3px solid var(--transparent-white);
+}
+
 .suvs button {
   color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+  cursor: pointer;
+  color: var(--transparent-white);
+  background-color: var(--dark-cyan);
+  border: 3px solid var(--transparent-white);
 }
 
 .luxury button {
   color: var(--very-dark-cyan);
 }
+
+.luxury button:hover {
+  cursor: pointer;
+  color: var(--transparent-white);
+  background-color: var(--very-dark-cyan);
+  border: 3px solid var(--transparent-white);
+}
+
 
 
 @media (min-width: 375px) {
